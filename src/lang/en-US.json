@@ -1,0 +1,11 @@
+{
+	"lang":						"En",
+	"title":					"Polarfi Games",
+	"description":				"Polarfi Games",
+
+	"menu.home":				"Home",
+	"menu.howto":				"How To Play",
+	"menu.faq":					"FAQ",
+	"menu.play":				"Buy Ticket",
+	"menu.err":					"Error"
+}
