@@ -8,6 +8,7 @@ import Home from './page/home/Index';
 import Play from './page/play/Index';
 
 import './App.css';
+import { Suspense } from 'react';
 
 const App = () => {
 	return (
@@ -15,8 +16,18 @@ const App = () => {
 			<BrowserRouter>
 				<Layout>
 					<Routes>
-						<Route path='/' element={<Home />} />
-						<Route path='/play' element={<Play />} />
+						{/* <Suspense fallback={<div>Loading...</div>}> */}
+							<Route path='/' element={(
+								<Suspense fallback={<div>Loading...</div>}>
+									<Home />
+								</Suspense>
+							)} />
+							<Route path='/play' element={(
+								<Suspense fallback={<div>Loading...</div>}>
+									<Play />
+								</Suspense>
+							)} />
+						{/* </Suspense> */}
 					</Routes>
 				</Layout>
 				<ToastContainer />

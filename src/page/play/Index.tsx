@@ -89,14 +89,14 @@ export default function Play({ }: PlayProps) {
                                     <H4>Winner</H4>
                                     <H4 pl="2em">Number</H4>
                                 </Div>
-                                <Div px="1rem">
+                                <Flexbox fill="1" pl="1rem" hAlign="flex-end" gap={"1rem"}>
                                     <Number>1</Number>
                                     <Number>2</Number>
                                     <Number>3</Number>
                                     <Number>4</Number>
                                     <Number>5</Number>
                                     <Number>6</Number>
-                                </Div>
+                                </Flexbox>
                             </Flexbox>
                         </Panel>
                     </Div>
@@ -127,14 +127,14 @@ export default function Play({ }: PlayProps) {
                                     <H4>Winner</H4>
                                     <H4 pl="2em">Number</H4>
                                 </Div>
-                                <Div px="1rem">
+                                <Flexbox fill="1" pl="1rem" hAlign="flex-end" gap={"1rem"}>
                                     <Number>1</Number>
                                     <Number>2</Number>
                                     <Number>3</Number>
                                     <Number>4</Number>
                                     <Number>5</Number>
                                     <Number>6</Number>
-                                </Div>
+                                </Flexbox>
                             </Flexbox>
                         </Panel>
                     </Div>
