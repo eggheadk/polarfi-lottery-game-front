@@ -14,8 +14,12 @@ export const HeroWrapper = styled(Section)`
 export const HeroButton = styled(Button)`
     transform: rotateZ(-10deg);
 
+    &:hover {
+        animation: Swing .3s ease 0s 3;
+    }
+
     &:active {
-        transform: rotateZ(-10deg) translate(0, 2px);
+        transform: rotateZ(-10deg) translate(0, 2px) !important;
     }
 `
 

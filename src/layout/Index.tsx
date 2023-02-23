@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../component/header/Index";
+import MobileMenu from "../component/menu-mobile/Index";
 import { Container } from "./style.component";
 
 interface LayoutProps { 
@@ -13,6 +14,7 @@ export default function Layout({ children }: LayoutProps) {
             <Container>
                 {children}
             </Container>
+            <MobileMenu />
         </>
     )
 }

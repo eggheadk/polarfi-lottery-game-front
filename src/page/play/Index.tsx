@@ -9,16 +9,19 @@ import Flexbox from "../../element/flexbox/Index";
 import { H1, H2, H3, H4, H5 } from "../../element/heading/Index";
 import P from "../../element/p/Index";
 import Span from "../../element/span/Index";
+import useStore from "../../useStore";
 
 import { HeroButton, HeroWrapper, Number } from "./style.component";
 
 interface PlayProps { }
 
 export default function Play({ }: PlayProps) {
+    const { T } = useStore();
+
     return (
         <>
             <HeroWrapper mx="1.5rem" mb="1rem">
-                <HeroButton tStyle="uppercase" size="lg">Buy ticket</HeroButton>
+                <HeroButton tStyle="uppercase" size="lg">{T("global.buyticket")}</HeroButton>
             </HeroWrapper>
             <Flexbox direct="column" vAlign="center" pt="2rem" mb="1rem">
                 <Flexbox vAlign="flex-end">
@@ -33,24 +36,24 @@ export default function Play({ }: PlayProps) {
                 <Panel>
                     <Flexbox direct="column" gap="0.7rem">
                         <Flexbox vAlign="center" hAlign="space-around" gap="2rem">
-                            <H4 tStyle="uppercase" fill="1 1 50%" tAlign="center">Prize Pot</H4>
+                            <H4 tStyle="uppercase" fill="1 1 50%" tAlign="center">{T("global.prizepot")}</H4>
                             <H3 fill="1 1 50%" tAlign="center">$39,804</H3>
                         </Flexbox>
                         <Flexbox vAlign="center" hAlign="space-around" gap="2rem">
-                            <H4 tStyle="uppercase" fill="1 1 50%" tAlign="center">Your ticket</H4>
+                            <H4 tStyle="uppercase" fill="1 1 50%" tAlign="center">{T("play.yourticket")}</H4>
                             <Flexbox fill="1 1 50%" hAlign="center">
                                 <Span>You have <Span>0</Span> ticket this round</Span>
                             </Flexbox>
                         </Flexbox>
                         <Flexbox hAlign="center">
-                            <Button tStyle="capitalize">Buy ticket</Button>
+                            <Button tStyle="capitalize">{T("global.buyticket")}</Button>
                         </Flexbox>
                     </Flexbox>
                 </Panel>
                 <Flexbox direct="column" gap="2rem" vAlign="center" hAlign="center">
                     <H4>Connect your wallet to check if you’ve won</H4>
                     <Flexbox hAlign="center">
-                        <Button tStyle="capitalize">Buy ticket</Button>
+                        <Button tStyle="capitalize">{T("global.buyticket")}</Button>
                     </Flexbox>
                 </Flexbox>
             </Flexbox>
@@ -58,7 +61,7 @@ export default function Play({ }: PlayProps) {
                 <H3 tStyle="uppercase" mb="3rem">History</H3>
                 <Flexbox count={2} wrap="wrap" gap="3rem" laptop={{ count: 1 }}>
                     <Div mb="2rem">
-                        <H4 tStyle="uppercase" mb="2rem" tAlign="center">All History</H4>
+                        <H4 tStyle="uppercase" mb="2rem" tAlign="center">{T("play.allhistory")}</H4>
                         <Panel
                             header={(
                                 <Flexbox hAlign="space-between">
@@ -74,12 +77,12 @@ export default function Play({ }: PlayProps) {
                             )}
                             footer={(
                                 <Flexbox vAlign="flex-end">
-                                    <H4 w="40%" tAlign="center">Prize Pot</H4>
+                                    <H4 w="40%" tAlign="center">{T("global.prizepot")}</H4>
                                     <H3 color="warning">$39,804</H3>
                                 </Flexbox>
                             )}
                         >
-                            <Flexbox vAlign="center">
+                            <Flexbox vAlign="center" tablet={{ direct: "column", gap: "1rem" }}>
                                 <Div pl="1rem">
                                     <H3>Winner</H3>
                                     <H3 pl="2em">Number</H3>
@@ -100,7 +103,7 @@ export default function Play({ }: PlayProps) {
                         </Panel>
                     </Div>
                     <Div>
-                        <H4 tStyle="uppercase" mb="2rem" tAlign="center">My History</H4>
+                        <H4 tStyle="uppercase" mb="2rem" tAlign="center">{T("play.myhistory")}</H4>
                         <Panel
                             header={(
                                 <Flexbox hAlign="space-between">
@@ -116,12 +119,12 @@ export default function Play({ }: PlayProps) {
                             )}
                             footer={(
                                 <Flexbox vAlign="flex-end">
-                                    <H4 w="40%" tAlign="center">Prize Pot</H4>
+                                    <H4 w="40%" tAlign="center">{T("global.prizepot")}</H4>
                                     <H3 color="warning">$39,804</H3>
                                 </Flexbox>
                             )}
                         >
-                            <Flexbox vAlign="center">
+                            <Flexbox vAlign="center" tablet={{ direct: "column", gap: "1rem" }}>
                                 <Div pl="1rem">
                                     <H3>Winner</H3>
                                     <H3 pl="2em">Number</H3>

@@ -66,6 +66,10 @@ dd {
 	margin-left: 0;
 }
 
+li {
+	line-height: 1.125;
+}
+
 blockquote {
 	margin: 0 0 1rem;
 }

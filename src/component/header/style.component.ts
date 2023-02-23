@@ -5,4 +5,8 @@ export const HeaderWrapper = styled.header`
     align-items: center;
     height: 7.5rem;
     padding: 0 3.5rem;
+
+    @media (max-width: 768px) {
+        padding: 0 1rem;
+    }
 `

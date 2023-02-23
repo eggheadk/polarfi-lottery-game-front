@@ -1,5 +1,5 @@
 interface ButtonProps extends ButtonStyledType {
-    children?: JSX.Element | string | number
+    children?: any
 }
 
 interface ButtonStyledType extends TextStyledType, ElementStyledType {
