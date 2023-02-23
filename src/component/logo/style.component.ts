@@ -5,6 +5,6 @@ interface LogoWrapperProps {
 }
 
 export const LogoWrapper = styled.div<LogoWrapperProps>`
-    width: ${props => props.size || `150px`};
-    height: ${props => props.size || `150px`};
+    width: ${props => props.size || `200px`};
+    height: ${props => props.size || `200px`};
 `

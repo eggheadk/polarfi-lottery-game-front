@@ -1,9 +1,9 @@
 import React from "react";
 import { FlexboxWrapper } from "./style.component";
 
-export default function Flexbox ({children}: FlexboxProps) {
+export default function Flexbox ({children, ...rest}: FlexboxProps) {
     return (
-        <FlexboxWrapper>
+        <FlexboxWrapper {...rest}>
             {
                 children
             }

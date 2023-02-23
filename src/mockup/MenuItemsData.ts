@@ -17,7 +17,7 @@ const MenuItemsData = (): MenuType[] => {
         },
         {
             "label": T('menu.play'),
-            "link": "/"
+            "link": "/play"
         }
     ]
 }

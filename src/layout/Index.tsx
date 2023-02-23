@@ -10,7 +10,9 @@ export default function Layout({ children }: LayoutProps) {
     return (
         <>
             <Header />
-            <Container></Container>
+            <Container>
+                {children}
+            </Container>
         </>
     )
 }

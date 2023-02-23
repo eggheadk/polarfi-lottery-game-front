@@ -1,12 +1,8 @@
 import React from "react";
 import { ImageWrapper } from "./style.component";
 
-interface ImageProps {
-    src:            string
-}
-
-export default function Image ({src}: ImageProps) {
+export default function Image ({...rest}: ImageProps) {
     return (
-        <ImageWrapper src={src} />
+        <ImageWrapper {...rest} />
     )
 }

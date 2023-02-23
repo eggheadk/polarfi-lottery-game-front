@@ -1,16 +1,29 @@
+@font-face {
+	font-family: quicksand;
+	src: url(./assets/font/quicksand/Quicksand-Regular.ttf);
+}
+
+@font-face {
+	font-family: quicksand;
+	src: url(./assets/font/quicksand/Quicksand-Bold.ttf);
+	font-weight: 700;
+}
+
 :root {
 	--light:				#FFFFFF;
 	--success:				#58740e;
 	--primary:				#4651f7;
 	--danger:				#df0f0f;
 	--info:					#95a4fc;
-	--warning:				#d6d439;
+	--warning:				#8ED100;
 
-	--font:					Arial, Helvetica, sans-serif;
+	--font:					quicksand;
 	--font2:				Arial, Helvetica, sans-serif;
 
 	--bg:					#000000;
 	--bg2:					#000000;
+
+	--panel:				#233023;
 
 	--color:				#FFFFFF;
 	--color2:				#FFFFFF;
@@ -20,11 +33,17 @@
 
 body {
 	background: var(--bg);
-	font-size: 14px;
+	font-size: 1rem;
 	font-family: var(--font);
 	font-weight: 400;
-	line-height: 1em;
+	line-height: 1rem;
 	color: var(--color);
+}
+
+@media (max-width: 1200px) {
+	body {
+		font-size: 0.8rem;
+	}
 }
 
 * {

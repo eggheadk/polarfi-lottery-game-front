@@ -129,6 +129,11 @@ samp {
 	font-size: 1em;
 }
 
+p {
+	margin: 0;
+	line-height: 1.25;
+}
+
 pre {
 	margin-top: 0;
 	margin-bottom: 1rem;
@@ -179,18 +184,13 @@ textarea {
 	margin: 0;
 	font-family: inherit;
 	font-size: inherit;
-	line-height: inherit;
+	line-height: 1em;
 	outline: none;
 }
 
 button,
 input {
 	overflow: visible;
-}
-
-button,
-select {
-	text-transform: none;
 }
 
 select {
@@ -259,7 +259,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-	margin-bottom: 0.5rem;
-	font-weight: 500;
-	line-height: 1.4;
+	font-weight: 700;
+	line-height: 1.125;
+	margin: 0;
 }

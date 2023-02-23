@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Layout from './layout/Index';
 import Home from './page/home/Index';
+import Play from './page/play/Index';
 
 import './App.css';
 
@@ -15,7 +16,7 @@ const App = () => {
 				<Layout>
 					<Routes>
 						<Route path='/' element={<Home />} />
-						<Route path='/play' element={<div>HELLO</div>} />
+						<Route path='/play' element={<Play />} />
 					</Routes>
 				</Layout>
 				<ToastContainer />
