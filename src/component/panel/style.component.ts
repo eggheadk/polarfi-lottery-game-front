@@ -7,6 +7,10 @@ export const PanelWrapper = styled(Div)`
     background: #233023;
 `
 
-export const PanelHeader = styled(Div)``
+export const PanelHeader = styled(Div)`
+    border-bottom: 1px solid var(--border);
+`
 
-export const PanelFooter = styled(Div)``
+export const PanelFooter = styled(Div)`
+    border-top: 1px solid var(--border);
+`

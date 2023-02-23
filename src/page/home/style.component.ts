@@ -8,11 +8,22 @@ export const HeroWrapper = styled(Section)`
     align-items: center;
     height: 40vw;
     background: #111212;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: 100vh;
+        max-height: 450px;
+        text-align: center;
+    }
 `
 
 export const HeroLeftSection = styled(Flexbox)`
     flex: 1 1 50%;
     padding: 0 2rem 0 4rem;
+
+    @media (max-width: 768px) {
+        padding: 2rem 2rem;
+    }
 `
 
 export const HeroRightSection = styled(Flexbox)`
@@ -26,4 +37,22 @@ export const Step = styled(Div)`
     right: 1.125rem;
     text-transform: uppercase;
     font-weight: bold;
+`
+
+export const ImageWrapper = styled(Flexbox)`
+    align-items: center;
+    min-width: 400px;
+    height: 200px;
+
+    img {
+        max-height: unset;
+    }
+
+    @media (max-width: 1400px) {
+        min-width: 350px;
+    }
+
+    @media (max-width: 1024px) {
+        min-width: 270px;
+    }
 `

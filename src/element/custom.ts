@@ -66,7 +66,7 @@ export const styledElement = ({
 		${maxw				? `max-width:		${maxw};` : ``}
 		${maxh				? `max-height:		${maxh};` : ``}
 
-		@media (max-width: 768px) {
+		@media (max-width: 1024px) {
 			${fill				? `flex:			${fill};`: ``}
 			${mt || my || m		? `margin-top:		${mt ? `calc(${mt} / 2)` : my ? `calc(${my} / 2)` : `calc(${m} / 2)`};`: ``}
 			${mr || mx || m		? `margin-right:	${mr ? `calc(${mr} / 2)` : mx ? `calc(${mx} / 2)` : `calc(${m} / 2)`};`: ``}
@@ -94,6 +94,7 @@ export const styledFlex = ({
 	gap,
 	gapX,
 	gapY,
+	count,
 	sMobile,
 	mMobile,
 	lMobile,
@@ -108,10 +109,26 @@ export const styledFlex = ({
 		${hAlign		? `justify-content:	${hAlign};`				: ``}
 		${gapX || gap	? `column-gap:		${gapX ? gapX : gap};`	: ``}
 		${gapY || gap	? `row-gap:			${gapY ? gapY : gap};`	: ``}
+		${count			? `> * { width: calc((100% - ${direct === `row` || direct === `row-reverse` ? (gapX ? gapX : gap) : (gapY ? gapY : gap)} * ${count - 1}) / ${count}); }` : ``}
+
+		@media (max-width: 1024px) {
+			${laptop?.direct								? `flex-direction:	${laptop.direct};`	: ``}
+			${laptop?.wrap 									? `flex-wrap:		${laptop.wrap};`	: ``}
+			${laptop?.hAlign								? `justify-content:	${laptop.hAlign};`	: ``}
+			${laptop?.vAlign								? `align-items:		${laptop.vAlign};`	: ``}
+			${laptop?.gapX || laptop?.gap || gapX || gap	? `column-gap:		${laptop?.gapX ? laptop.gapX : laptop?.gap ? laptop.gap : gapX ? `calc(${gapX} * 2 / 3)` : `calc(${gap} * 2 / 3)`};`	: ``}
+			${laptop?.gapY || laptop?.gap || gapY || gap	? `row-gap:			${laptop?.gapY ? laptop.gapY : laptop?.gap ? laptop.gap : gapY ? `calc(${gapY} * 2 / 3)` : `calc(${gap} * 2 / 3)`};`	: ``}
+			${laptop?.count									? `> * { width: calc((100% - ${direct === `row` || direct === `row-reverse` ? (gapX ? gapX : gap) : (gapY ? gapY : gap)} * ${laptop.count - 1}) / ${laptop.count}); }` : ``}
+		}
 
 		@media (max-width: 768px) {
-			${gapX || gap	? `column-gap:		${gapX ? `calc(${gapX} / 2)` : `calc(${gap} / 2)`};`	: ``}
-			${gapY || gap	? `row-gap:			${gapY ? `calc(${gapY} / 2)` : `calc(${gap} / 2)`};`	: ``}
+			${tablet?.direct								? `flex-direction:	${tablet.direct};`	: ``}
+			${tablet?.wrap 									? `flex-wrap:		${tablet.wrap};`	: ``}
+			${tablet?.hAlign								? `justify-content:	${tablet.hAlign};`	: ``}
+			${tablet?.vAlign								? `align-items:		${tablet.vAlign};`	: ``}
+			${tablet?.gapX || tablet?.gap || gapX || gap	? `column-gap:		${tablet?.gapX ? tablet.gapX : tablet?.gap ? tablet.gap : gapX ? `calc(${gapX} / 2)` : `calc(${gap} / 2)`};`	: ``}
+			${tablet?.gapY || tablet?.gap || gapY || gap	? `row-gap:			${tablet?.gapY ? tablet.gapY : tablet?.gap ? tablet.gap : gapY ? `calc(${gapY} / 2)` : `calc(${gap} / 2)`};`	: ``}
+			${tablet?.count									? `> * { width: calc((100% - ${direct === `row` || direct === `row-reverse` ? (gapX ? gapX : gap) : (gapY ? gapY : gap)} * ${tablet.count - 1}) / ${tablet.count}); }` : ``}
 		}
 	`
 }

@@ -1,6 +1,8 @@
-interface ImageProps {
+interface ImageProps extends ImageStyledType {
     src:            string
 }
 
-interface ImageStyledType {
-}
+
+// interface ImageStyledType extends ImageStyledType {
+    
+// }

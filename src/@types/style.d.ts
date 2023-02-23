@@ -48,7 +48,7 @@ declare interface ElementStyledType extends ElementAttributeType {
 	// laptopL?:	ElementAttributeType
 }
 
-declare interface FelxAttributeType {
+declare interface FlexAttributeType {
 	wrap?:		'wrap' | 'nowrap'
 	direct?:	string
 	vAlign?:	string
@@ -56,13 +56,28 @@ declare interface FelxAttributeType {
 	gap?:		string
 	gapX?:		string
 	gapY?:		string
+	count?:		number
 }
 
-declare interface FlexStyledType extends FelxAttributeType {
-	sMobile?:	FelxAttributeType
-	mMobile?:	FelxAttributeType
-	lMobile?:	FelxAttributeType
-	tablet?:	FelxAttributeType
-	laptop?:	FelxAttributeType
-	laptopL?:	FelxAttributeType
+declare interface FlexStyledType extends FlexAttributeType {
+	sMobile?:	FlexAttributeType
+	mMobile?:	FlexAttributeType
+	lMobile?:	FlexAttributeType
+	tablet?:	FlexAttributeType
+	laptop?:	FlexAttributeType
+	laptopL?:	FlexAttributeType
+}
+
+declare interface ImageAttributeType {
+	width?:		string
+	height?:	string
+}
+
+declare interface ImageStyledType extends ImageAttributeType {
+	sMobile?:	ImageAttributeType
+	mMobile?:	ImageAttributeType
+	lMobile?:	ImageAttributeType
+	tablet?:	ImageAttributeType
+	laptop?:	ImageAttributeType
+	laptopL?:	ImageAttributeType
 }

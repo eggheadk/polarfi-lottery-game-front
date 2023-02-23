@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from "../../component/icon/Index";
 import Panel from "../../component/panel/Index";
+import ActionButton from "../../element/action-button/Index";
 
 import Button from "../../element/button/Index";
 import Div from "../../element/div/Index";
@@ -28,8 +29,8 @@ export default function Play({ }: PlayProps) {
                 </Flexbox>
                 <H4>Until the Draw</H4>
             </Flexbox>
-            <Flexbox px="6rem" pt="2rem" gap="5rem">
-                <Panel fill="1">
+            <Flexbox count={2} wrap="wrap" px="6rem" pt="2rem" gap="5rem" tablet={{ count: 1 }}>
+                <Panel>
                     <Flexbox direct="column" gap="0.7rem">
                         <Flexbox vAlign="center" hAlign="space-around" gap="2rem">
                             <H4 tStyle="uppercase" fill="1 1 50%" tAlign="center">Prize Pot</H4>
@@ -42,21 +43,21 @@ export default function Play({ }: PlayProps) {
                             </Flexbox>
                         </Flexbox>
                         <Flexbox hAlign="center">
-                            <Button>Buy ticket</Button>
+                            <Button tStyle="capitalize">Buy ticket</Button>
                         </Flexbox>
                     </Flexbox>
                 </Panel>
-                <Flexbox fill="1" direct="column" gap="2rem" vAlign="center" hAlign="center">
+                <Flexbox direct="column" gap="2rem" vAlign="center" hAlign="center">
                     <H4>Connect your wallet to check if you’ve won</H4>
                     <Flexbox hAlign="center">
-                        <Button>Buy ticket</Button>
+                        <Button tStyle="capitalize">Buy ticket</Button>
                     </Flexbox>
                 </Flexbox>
             </Flexbox>
             <Div px="4rem" pt="4rem" mb="2rem">
                 <H3 tStyle="uppercase" mb="3rem">History</H3>
-                <Flexbox gap="3rem">
-                    <Div fill="1">
+                <Flexbox count={2} wrap="wrap" gap="3rem" laptop={{ count: 1 }}>
+                    <Div mb="2rem">
                         <H4 tStyle="uppercase" mb="2rem" tAlign="center">All History</H4>
                         <Panel
                             header={(
@@ -65,53 +66,9 @@ export default function Play({ }: PlayProps) {
                                         <H5 mb="0.2rem">360</H5>
                                         <P>Drawn Feb 19, 2023, 4:00 PM</P>
                                     </Div>
-                                    <Flexbox gap="0.5rem">
-                                        <Span><Icon icon="ChevronLeft" /></Span>
-                                        <Span><Icon icon="ChevronRight" /></Span>
-                                    </Flexbox>
-                                </Flexbox>
-                            )}
-                            footer={(
-                                <Flexbox hAlign="space-between">
-                                    <Div>
-                                        <H5 mb="0.2rem">360</H5>
-                                        <P>Drawn Feb 19, 2023, 4:00 PM</P>
-                                    </Div>
                                     <Flexbox>
-                                        <Span>L</Span>
-                                        <Span>R</Span>
-                                    </Flexbox>
-                                </Flexbox>
-                            )}
-                        >
-                            <Flexbox vAlign="align">
-                                <Div pr="2rem">
-                                    <H4>Winner</H4>
-                                    <H4 pl="2em">Number</H4>
-                                </Div>
-                                <Flexbox fill="1" pl="1rem" hAlign="flex-end" gap={"1rem"}>
-                                    <Number>1</Number>
-                                    <Number>2</Number>
-                                    <Number>3</Number>
-                                    <Number>4</Number>
-                                    <Number>5</Number>
-                                    <Number>6</Number>
-                                </Flexbox>
-                            </Flexbox>
-                        </Panel>
-                    </Div>
-                    <Div fill="1">
-                        <H4 tStyle="uppercase" mb="2rem" tAlign="center">My History</H4>
-                        <Panel
-                            header={(
-                                <Flexbox hAlign="space-between">
-                                    <Div>
-                                        <H5 mb="0.2rem">360</H5>
-                                        <P>Drawn Feb 19, 2023, 4:00 PM</P>
-                                    </Div>
-                                    <Flexbox gap="0.5rem">
-                                        <Span><Icon icon="ChevronLeft" /></Span>
-                                        <Span><Icon icon="ChevronRight" /></Span>
+                                        <ActionButton><Icon icon="ChevronLeft" width="1.5rem" height="1.5rem" /></ActionButton>
+                                        <ActionButton><Icon icon="ChevronRight" width="1.5rem" height="1.5rem" /></ActionButton>
                                     </Flexbox>
                                 </Flexbox>
                             )}
@@ -122,18 +79,64 @@ export default function Play({ }: PlayProps) {
                                 </Flexbox>
                             )}
                         >
-                            <Flexbox vAlign="align">
-                                <Div pr="2rem">
-                                    <H4>Winner</H4>
-                                    <H4 pl="2em">Number</H4>
+                            <Flexbox vAlign="center">
+                                <Div pl="1rem">
+                                    <H3>Winner</H3>
+                                    <H3 pl="2em">Number</H3>
                                 </Div>
-                                <Flexbox fill="1" pl="1rem" hAlign="flex-end" gap={"1rem"}>
-                                    <Number>1</Number>
-                                    <Number>2</Number>
-                                    <Number>3</Number>
-                                    <Number>4</Number>
-                                    <Number>5</Number>
-                                    <Number>6</Number>
+                                <Flexbox direct="column" fill="1" vAlign="center" pl="1rem" gap={"0.5rem"}>
+                                    <Flexbox wrap="wrap" hAlign="flex-end" gap={"0.5rem"}>
+                                        <Number>1</Number>
+                                        <Number>2</Number>
+                                        <Number>3</Number>
+                                    </Flexbox>
+                                    <Flexbox wrap="wrap" fill="1" hAlign="flex-end" gap={"0.5rem"}>
+                                        <Number>4</Number>
+                                        <Number>5</Number>
+                                        <Number>6</Number>
+                                    </Flexbox>
+                                </Flexbox>
+                            </Flexbox>
+                        </Panel>
+                    </Div>
+                    <Div>
+                        <H4 tStyle="uppercase" mb="2rem" tAlign="center">My History</H4>
+                        <Panel
+                            header={(
+                                <Flexbox hAlign="space-between">
+                                    <Div>
+                                        <H5 mb="0.2rem">360</H5>
+                                        <P>Drawn Feb 19, 2023, 4:00 PM</P>
+                                    </Div>
+                                    <Flexbox>
+                                        <ActionButton><Icon icon="ChevronLeft" width="1.5rem" height="1.5rem" /></ActionButton>
+                                        <ActionButton><Icon icon="ChevronRight" width="1.5rem" height="1.5rem" /></ActionButton>
+                                    </Flexbox>
+                                </Flexbox>
+                            )}
+                            footer={(
+                                <Flexbox vAlign="flex-end">
+                                    <H4 w="40%" tAlign="center">Prize Pot</H4>
+                                    <H3 color="warning">$39,804</H3>
+                                </Flexbox>
+                            )}
+                        >
+                            <Flexbox vAlign="center">
+                                <Div pl="1rem">
+                                    <H3>Winner</H3>
+                                    <H3 pl="2em">Number</H3>
+                                </Div>
+                                <Flexbox direct="column" fill="1" vAlign="center" pl="1rem" gap={"0.5rem"}>
+                                    <Flexbox wrap="wrap" hAlign="flex-end" gap={"0.5rem"}>
+                                        <Number>1</Number>
+                                        <Number>2</Number>
+                                        <Number>3</Number>
+                                    </Flexbox>
+                                    <Flexbox wrap="wrap" fill="1" hAlign="flex-end" gap={"0.5rem"}>
+                                        <Number>4</Number>
+                                        <Number>5</Number>
+                                        <Number>6</Number>
+                                    </Flexbox>
                                 </Flexbox>
                             </Flexbox>
                         </Panel>

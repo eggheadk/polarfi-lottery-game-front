@@ -3,5 +3,4 @@ interface FlexboxProps extends FlexboxStyledType{
 }
 
 interface FlexboxStyledType extends FlexStyledType, ElementStyledType{
-    count?: number
 }
