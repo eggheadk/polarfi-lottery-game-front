@@ -64,3 +64,25 @@ body {
 		transform: rotateZ(-10deg);
 	}
 }
+
+
+
+::-webkit-scrollbar {
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #5a4e4e;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #000000;
+	border: 1px solid #5a4e4e;
+	border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--bg);
+}
