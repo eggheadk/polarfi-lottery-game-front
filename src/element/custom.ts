@@ -4,12 +4,12 @@ export const styledText = ({
 	tAlign,
 	tStyle,
 	color,
-	sMobile,
-	mMobile,
-	lMobile,
-	tablet,
-	laptop,
-	laptopL,
+	// sMobile,
+	// mMobile,
+	// lMobile,
+	// tablet,
+	// laptop,
+	// laptopL,
 }: TextStyledType): string => {
 	return `
 		${fsize		? `font-size:		${fsize};`			: ``}
