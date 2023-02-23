@@ -47,6 +47,7 @@ export const Step = styled(Div)`
 export const ImageWrapper = styled(Flexbox)`
     align-items: center;
     min-width: 400px;
+    max-width: 400px;
     height: 200px;
 
     img {

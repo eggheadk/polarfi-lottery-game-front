@@ -9,7 +9,7 @@ import { HeroLeftSection, HeroRightSection, HeroWrapper, ImageWrapper, Step } fr
 import Flexbox from "../../element/flexbox/Index";
 import Div from "../../element/div/Index";
 import Panel from "../../component/panel/Index";
-import { LogoImg } from "../../constant/image";
+import { HowToImg1, HowToImg2, LogoImg } from "../../constant/image";
 import Image from "../../element/image/Index";
 import { Link } from "react-router-dom";
 
@@ -61,7 +61,7 @@ export default function Home({ }: HomeProps) {
                     </Panel>
                 </Flexbox>
                 <Div pt="4rem" pb="2rem" px="2rem">
-                    <Flexbox mb="4rem" tablet={{ direct: "column", vAlign: "center" }}>
+                    <Flexbox mb="4rem" tablet={{ direct: "column", vAlign: "center" }} gap="1rem">
                         <Flexbox fill="1" direct="column" gap="1rem" tablet={{ direct: "column", vAlign: "center", gap: "1rem" }}>
                             <H4 tStyle="uppercase">Winning Criteria</H4>
                             <P>{T("home.rule1.draw")}</P>
@@ -73,10 +73,10 @@ export default function Home({ }: HomeProps) {
                             <Link to={"/play"}><Div mt="1rem"><Button tStyle="capitalize">{T("global.buyticket")}</Button></Div></Link>
                         </Flexbox>
                         <ImageWrapper>
-                            <Image src={LogoImg} />
+                            <Image src={HowToImg1} />
                         </ImageWrapper>
                     </Flexbox>
-                    <Flexbox tablet={{ direct: "column", vAlign: "center" }}>
+                    <Flexbox tablet={{ direct: "column", vAlign: "center" }} gap="1rem">
                         <Flexbox fill="1" direct="column" gap="1rem" tablet={{ direct: "column", vAlign: "center", gap: "1rem" }}>
                             <H4 tStyle="uppercase">Prize Funds</H4>
                             <P>{T("home.rule2.prize")}</P>
@@ -95,7 +95,7 @@ export default function Home({ }: HomeProps) {
                             <Link to={"/play"}><Div mt="1rem"><Button tStyle="capitalize">{T("global.buyticket")}</Button></Div></Link>
                         </Flexbox>
                         <ImageWrapper>
-                            <Image src={LogoImg} />
+                            <Image src={HowToImg2} />
                         </ImageWrapper>
                     </Flexbox>
                 </Div>
