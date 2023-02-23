@@ -28,7 +28,7 @@ export const MenuItems = styled.ul<{ isOpen?: boolean }>`
 		margin-top: 0px;
 		background: var(--bg);
 		border-bottom: 1px solid var(--border);
-		box-shadow: 0 0 10px 0 var(--border);
+		box-shadow: 0 0 20px 0 #FFFFFF44;
 
 		${props => props.isOpen ? `
 			{
@@ -38,7 +38,7 @@ export const MenuItems = styled.ul<{ isOpen?: boolean }>`
 	}
 
 	@media (max-width: 768px) {
-		width: calc(100vw - 3rem);
+		width: calc(100vw - 2rem);
 	}
 `
 

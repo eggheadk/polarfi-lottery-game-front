@@ -6,7 +6,7 @@ export const MobileMenuWrapper = styled.div`
     left: 0;
     display: none;
     width: 100vw;
-    height: 4rem;
+    height: 5rem;
     background: var(--light);
 
     @media (max-width: 768px) {
@@ -30,7 +30,7 @@ export const MobileMenuItem = styled.li`
 
     > a, >button {
         display: inline-block;
-        padding: 0.7rem;
+        padding: 0.9rem;
         background: none;
         border: 1px solid var(--border);
         border-radius: 0.5rem;
