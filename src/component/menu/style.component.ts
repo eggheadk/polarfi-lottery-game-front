@@ -29,6 +29,7 @@ export const MenuItems = styled.ul<{ isOpen?: boolean }>`
 		background: var(--bg);
 		border-bottom: 1px solid var(--border);
 		box-shadow: 0 0 20px 0 #FFFFFF44;
+		z-index: 9000;
 
 		${props => props.isOpen ? `
 			{

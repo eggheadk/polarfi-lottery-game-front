@@ -37,6 +37,11 @@ export const Step = styled(Div)`
     right: 1.125rem;
     text-transform: uppercase;
     font-weight: bold;
+
+    @media (max-width: 1024px) {
+        top: 0.7rem;
+        right: 0.7rem;
+    }
 `
 
 export const ImageWrapper = styled(Flexbox)`

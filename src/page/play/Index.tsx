@@ -53,7 +53,7 @@ export default function Play({ }: PlayProps) {
                 <Flexbox direct="column" gap="2rem" vAlign="center" hAlign="center">
                     <H4>Connect your wallet to check if you’ve won</H4>
                     <Flexbox hAlign="center">
-                        <Button tStyle="capitalize">{T("global.buyticket")}</Button>
+                        <Button tStyle="capitalize">{T("play.checknow")}</Button>
                     </Flexbox>
                 </Flexbox>
             </Flexbox>
