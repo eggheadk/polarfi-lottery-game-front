@@ -5,6 +5,7 @@ interface IconProps {
     icon:       string
     width?:     string
     height?:    string
+    fill?:      string
 }
 
 const icons: any = {
@@ -58,9 +59,9 @@ const icons: any = {
     )
 }
 
-export default function Icon({ icon, width, height }: IconProps) {
+export default function Icon({ icon, width, height, fill }: IconProps) {
     return (
-        <IconWrapper width={width} height={height}>
+        <IconWrapper width={width} height={height} fill={fill}>
             {icons[icon]}
         </IconWrapper>
     )

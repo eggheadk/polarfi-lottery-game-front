@@ -1,6 +1,6 @@
 import useStore from "../useStore";
 
-const MenuItemsData = (): MenuType[] => {
+const _MENUITEMS = (): LinkItemType[] => {
     const { T } = useStore();
     return [
         {
@@ -22,4 +22,4 @@ const MenuItemsData = (): MenuType[] => {
     ]
 }
 
-export default MenuItemsData;
+export default _MENUITEMS;

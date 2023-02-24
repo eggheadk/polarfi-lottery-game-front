@@ -29,15 +29,34 @@
 	"home.rule2.prize1.title":			"Purchases of Tickets",
 	"home.rule2.prize1.desc":			"All $FROST payments made by participants in that round are returned in full to the prize pots.",
 	"home.rule2.prize2.title":			"Recurring Prizes",
-	"home.rule2.prize2.desc":			"If no one wins in a prize bracket after each round, the unclaimed Points for that bracket are carried over to the following round and divided again among the prize pools. ",
+	"home.rule2.prize2.desc":			"If no one wins in a prize bracket after each round, the unclaimed $FROST for that bracket are carried over to the following round and divided again among the prize pools. ",
 	"home.rule2.prize3.title":			"Release of $FROST",
-	"home.rule2.prize3.desc":			"Throughout the course of a week, lottery rounds receive an average addition from the Treasury of X $FROST. Of course, rollovers also apply to this Dessert! Learn more in our ",
-	"home.rule2.prize3.cakenomics":		"$FROST Tokenomics guide",
+	"home.rule2.prize3.desc":			"Throughout the course of a week, lottery rounds receive an average addition from the Treasury of X $FROST. Of course, rollovers also apply to this Pool! Learn more in our ",
+	"home.rule2.prize3.cakenomics":		"$FROST Tokenomics Guide",
 
 	"play.yourticket":					"Your ticket",
 	"play.allhistory":					"All history",
 	"play.myhistory":					"My history",
 	"play.checknow":					"Check now",
+
+	"footer.about":						"About",
+	"footer.about.contact":				"Contact",
+	"footer.about.brand":				"Brand",
+	"footer.about.blog":				"Blog",
+	"footer.about.community":			"Comunity",
+	"footer.about.litepaper":			"Litepaper",
+
+	"footer.help":						"Help",
+	"footer.help.support":				"Customer Support",
+	"footer.help.troble":				"Troubles Support",
+	"footer.help.guides":				"Guides",
+
+	"footer.developers":				"Developers",
+	"footer.developers.github":			"Github",
+	"footer.developers.documentation":	"Documentation",
+	"footer.developers.bugbounty":		"Bug Bounty",
+	"footer.developers.aduits":			"Audits",
+	"footer.developers.career":			"Careers",
 	
 	"menu.err":					"Error"
 }

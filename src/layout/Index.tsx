@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../component/footer/Index";
 import Header from "../component/header/Index";
 import MobileMenu from "../component/menu-mobile/Index";
 import { Container } from "./style.component";
@@ -15,6 +16,7 @@ export default function Layout({ children }: LayoutProps) {
                 {children}
             </Container>
             <MobileMenu />
+            <Footer />
         </>
     )
 }

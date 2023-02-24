@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Hamburger, MenuContainer, MenuItem as MenuItemType, MenuItems } from "./style.component";
-import MenuItemsData from "../../mockup/MenuItemsData";
+import _MENUITEMS from "../../mockup/menu-items";
 import ConnectWalletButton from "../connect-wallet-button/Index";
 import { ChainImages } from "../../constant/image";
 import Image from "../../element/image/Index";
@@ -66,7 +66,7 @@ export default function Menu({ }: LayoutProps) {
     return (
         <MenuContainer ref={headerContainer} isOpen={status.isOpen}>
             <MenuItems isOpen={status.isOpen}>
-                {MenuItemsData().map((i: MenuItemType, k: number) => (
+                {_MENUITEMS().map((i: MenuItemType, k: number) => (
                     <MenuItemType key={k} isOpen={status.isOpen}>
                         <Link to={i.link}>{i.label}</Link>
                     </MenuItemType>

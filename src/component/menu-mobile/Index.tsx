@@ -14,24 +14,24 @@ export default function MobileMenu({ }: MobileMenuProps) {
                 <MobileMenuItem>
                     <Link to={"/"}>
                         <Flexbox direct="column" vAlign="center" gap="0.5rem">
-                            <Icon icon="Book" width="1.3rem" height="1.3rem" />
-                            <Span fsize="0.8em">How to play</Span>
+                            <Icon fill="color" icon="Book" width="1.3rem" height="1.3rem" />
+                            <Span color="color" fsize="0.8em">How to play</Span>
                         </Flexbox>
                     </Link>
                 </MobileMenuItem>
                 <MobileMenuItem>
                     <Link to={"/"}>
                         <Flexbox direct="column" vAlign="center" gap="0.5rem">
-                            <Icon icon="FAQ" width="1.3rem" height="1.3rem" />
-                            <Span fsize="0.8em">FAQ</Span>
+                            <Icon fill="color" icon="FAQ" width="1.3rem" height="1.3rem" />
+                            <Span color="color" fsize="0.8em">FAQ</Span>
                         </Flexbox>
                     </Link>
                 </MobileMenuItem>
                 <MobileMenuItem>
                     <Link to={"/"}>
                         <Flexbox direct="column" vAlign="center" gap="0.5rem">
-                            <Icon icon="Lottery" width="1.3rem" height="1.3rem" />
-                            <Span fsize="0.8em">Buy ticket</Span>
+                            <Icon fill="color" icon="Lottery" width="1.3rem" height="1.3rem" />
+                            <Span color="color" fsize="0.8em">Buy ticket</Span>
                         </Flexbox>
                     </Link>
                 </MobileMenuItem>

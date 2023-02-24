@@ -65,6 +65,10 @@ body {
 	}
 }
 
+li {
+	line-height: 1.4em !important;
+	margin-bottom: 0.5rem
+}
 
 
 ::-webkit-scrollbar {
