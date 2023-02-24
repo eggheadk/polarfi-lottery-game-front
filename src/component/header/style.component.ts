@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.header`
     display: flex;
     align-items: center;
     width: 100%;
-    height: 7.5rem;
+    height: 6.5rem;
     padding: 0 3.5rem;
     background: var(--bg);
     z-index: 8000;

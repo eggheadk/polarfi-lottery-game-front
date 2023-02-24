@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HeroImg } from "../../constant/image";
 import Div from "../../element/div/Index";
 import Flexbox from "../../element/flexbox/Index";
 import Section from "../../element/section/Index";
@@ -7,7 +8,9 @@ export const HeroWrapper = styled(Section)`
     display: flex;
     align-items: center;
     height: 40vw;
-    background: #111212;
+    background: no-repeat url(${HeroImg});
+    background-size: cover;
+    background-position: center center;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -45,7 +48,7 @@ export const Step = styled(Div)`
 `
 
 export const ImageWrapper = styled(Flexbox)`
-    align-items: center;
+    align-items: flex-start;
     min-width: 400px;
     max-width: 400px;
     height: 200px;

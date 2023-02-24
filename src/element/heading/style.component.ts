@@ -76,18 +76,18 @@ export const H4Wrapper = styled.h4<HeadingStyledType>`
 export const H5Wrapper = styled.h5<HeadingStyledType>`
     ${props => styledText(props)}
     ${props => styledElement(props)}
-    font-size: 1em;
+    font-size: 1.2em;
 
     @media (max-width: 1024px) {
-        font-size: 1.8em;
+        font-size: 1.1em;
     }
 
     @media (max-width: 768px) {
-        font-size: 1.6em;
+        font-size: 1em;
     }
 
     @media (max-width: 430px) {
-        font-size: 1.4em;
+        font-size: 1em;
     }
 `
 

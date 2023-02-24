@@ -72,7 +72,7 @@ export default function Home({ }: HomeProps) {
                             <P>{T("home.rule1.rule")}</P>
                             <Link to={"/play"}><Div mt="1rem"><Button tStyle="capitalize">{T("global.buyticket")}</Button></Div></Link>
                         </Flexbox>
-                        <ImageWrapper>
+                        <ImageWrapper mt="3rem">
                             <Image src={HowToImg1} />
                         </ImageWrapper>
                     </Flexbox>
@@ -94,7 +94,7 @@ export default function Home({ }: HomeProps) {
                             </ul>
                             <Link to={"/play"}><Div mt="1rem"><Button tStyle="capitalize">{T("global.buyticket")}</Button></Div></Link>
                         </Flexbox>
-                        <ImageWrapper>
+                        <ImageWrapper mt="3rem">
                             <Image src={HowToImg2} />
                         </ImageWrapper>
                     </Flexbox>
