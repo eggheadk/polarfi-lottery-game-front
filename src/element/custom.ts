@@ -109,7 +109,7 @@ export const styledFlex = ({
 		${hAlign		? `justify-content:	${hAlign};`				: ``}
 		${gapX || gap	? `column-gap:		${gapX ? gapX : gap};`	: ``}
 		${gapY || gap	? `row-gap:			${gapY ? gapY : gap};`	: ``}
-		${count			? `> * { width: calc((100% - ${direct === `row` || direct === `row-reverse` ? (gapX ? gapX : gap) : (gapY ? gapY : gap)} * ${count - 1}) / ${count}); }` : ``}
+		${count			? `> * { width: calc((100% - ${direct === `row` || direct === `row-reverse` ? (gapX ? gapX : gap ? gap : "0px") : (gapY ? gapY : gap ? gap : "0px")} * ${count - 1}) / ${count}); }` : ``}
 
 		@media (max-width: 1024px) {
 			${laptop?.direct								? `flex-direction:	${laptop.direct};`	: ``}
@@ -118,7 +118,7 @@ export const styledFlex = ({
 			${laptop?.vAlign								? `align-items:		${laptop.vAlign};`	: ``}
 			${laptop?.gapX || laptop?.gap || gapX || gap	? `column-gap:		${laptop?.gapX ? laptop.gapX : laptop?.gap ? laptop.gap : gapX ? `calc(${gapX} * 2 / 3)` : `calc(${gap} * 2 / 3)`};`	: ``}
 			${laptop?.gapY || laptop?.gap || gapY || gap	? `row-gap:			${laptop?.gapY ? laptop.gapY : laptop?.gap ? laptop.gap : gapY ? `calc(${gapY} * 2 / 3)` : `calc(${gap} * 2 / 3)`};`	: ``}
-			${laptop?.count									? `> * { width: calc((100% - ${direct === `row` || direct === `row-reverse` ? (gapX ? gapX : gap) : (gapY ? gapY : gap)} * ${laptop.count - 1}) / ${laptop.count}); }` : ``}
+			${laptop?.count									? `> * { width: calc((100% - ${direct === `row` || direct === `row-reverse` ? (gapX ? gapX : gap ? gap : "0px") : (gapY ? gapY : gap ? gap : "0px")} * ${laptop.count - 1}) / ${laptop.count}); }` : ``}
 		}
 
 		@media (max-width: 768px) {
@@ -128,7 +128,7 @@ export const styledFlex = ({
 			${tablet?.vAlign								? `align-items:		${tablet.vAlign};`	: ``}
 			${tablet?.gapX || tablet?.gap || gapX || gap	? `column-gap:		${tablet?.gapX ? tablet.gapX : tablet?.gap ? tablet.gap : gapX ? `calc(${gapX} / 2)` : `calc(${gap} / 2)`};`	: ``}
 			${tablet?.gapY || tablet?.gap || gapY || gap	? `row-gap:			${tablet?.gapY ? tablet.gapY : tablet?.gap ? tablet.gap : gapY ? `calc(${gapY} / 2)` : `calc(${gap} / 2)`};`	: ``}
-			${tablet?.count									? `> * { width: calc((100% - ${direct === `row` || direct === `row-reverse` ? (gapX ? gapX : gap) : (gapY ? gapY : gap)} * ${tablet.count - 1}) / ${tablet.count}); }` : ``}
+			${tablet?.count									? `> * { width: calc((100% - ${direct === `row` || direct === `row-reverse` ? (gapX ? gapX : gap ? gap : "0px") : (gapY ? gapY : gap ? gap : "0px")} * ${tablet.count - 1}) / ${tablet.count}); }` : ``}
 		}
 	`
 }
