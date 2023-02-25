@@ -9,6 +9,8 @@ import HeroImage from "../assets/image/home/hero.png"
 import HowToImage1 from "../assets/image/home/1.png"
 import HowToImage2 from "../assets/image/home/2.png"
 
+import BuyTicketBannerImage from "../assets/image/play/banner.png"
+
 export const LogoImg = LogoImage;
 export const LogoSmImg = LogoSmImage;
 
@@ -19,3 +21,5 @@ export const ChainImages = {
 export const HeroImg = HeroImage;
 export const HowToImg1 = HowToImage1;
 export const HowToImg2 = HowToImage2;
+
+export const BuyTicketBannerImg = BuyTicketBannerImage;

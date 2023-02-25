@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BuyTicketBannerImg } from "../../constant/image";
 import Button from "../../element/button/Index";
 import Section from "../../element/section/Index";
 import Span from "../../element/span/Index";
@@ -7,8 +8,11 @@ export const HeroWrapper = styled(Section)`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    background: #111212;
+    height: 250px;
+    background: no-repeat url(${BuyTicketBannerImg});
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
 `
 
 export const HeroButton = styled(Button)`

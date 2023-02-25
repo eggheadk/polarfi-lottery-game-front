@@ -11,11 +11,12 @@ export const HeroWrapper = styled(Section)`
     background: no-repeat url(${HeroImg});
     background-size: cover;
     background-position: center center;
+    border-radius: 0.5rem;
 
     @media (max-width: 768px) {
         flex-direction: column;
         height: 100vh;
-        max-height: 450px;
+        max-height: 480px;
         text-align: center;
     }
 `
@@ -42,9 +43,14 @@ export const Step = styled(Div)`
     font-weight: bold;
 
     @media (max-width: 1024px) {
-        top: 0.7rem;
-        right: 0.7rem;
+        top: 0.5rem;
+        right: 1rem;
     }
+
+    // @media (max-width: 1024px) {
+    //     top: 0.7rem;
+    //     right: 0.7rem;
+    // }
 `
 
 export const ImageWrapper = styled(Flexbox)`
@@ -52,9 +58,11 @@ export const ImageWrapper = styled(Flexbox)`
     min-width: 400px;
     max-width: 400px;
     height: 200px;
+    border-radius: 0.5rem;
 
-    img {
+    > img {
         max-height: unset;
+        border-radius: 0.5rem;
     }
 
     @media (max-width: 1400px) {
